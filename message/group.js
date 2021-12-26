@@ -28,7 +28,7 @@ module.exports = welcome = async (dha, anu) => {
                 pp_grup = 'https://i.postimg.cc/SN54m6LW/SAVE-20210728-133334.jpg'
             }
             if (anu.action == 'add' && mem.includes(dha.user.jid)) {
-            dha.sendMessage(anu.jid, 'Halo! Terima Kasih sudah Mengundangku, Jika ingin Menggunakan Bot Ketik ${prefix}menu', 'conversation')
+            dha.sendMessage(anu.jid, 'Halo! A9wad BOT F L3ALAM IS HERE ${prefix}menu', 'conversation')
             }
              if (anu.action == 'add' && !mem.includes(dha.user.jid)) {
              if (!welkom.includes(anu.jid)) return
@@ -58,7 +58,7 @@ module.exports = welcome = async (dha, anu) => {
                 buff = await getBuffer(`http://hadi-api.herokuapp.com/api/card/goodbye?nama=${anu_user}&descriminator=${time_wel}&memcount=${memeg}&gcname=${encodeURI(mdata.subject)}&pp=${pp_user}&bg=https://i.postimg.cc/rFkw8MpX/IMG-20210807-151325.jpg`)
                 buttons = [{buttonId: `#ab6363c`,buttonText:{displayText: 'Byee Kak 🤙'},type:1}]
                 imageMsg = (await dha.prepareMessageMedia((buff), 'imageMessage', {thumbnail: buff})).imageMessage
-                buttonsMessage = { contentText: `${out}`, footerText: 'Nasi Kotak Nya 1 Pedes Ya', imageMessage: imageMsg, buttons: buttons, headerType: 4 }
+                buttonsMessage = { contentText: `${out}`, footerText: 'BLG HERE BRUDA', imageMessage: imageMsg, buttons: buttons, headerType: 4 }
                 prep = await dha.prepareMessageFromContent(mdata.id,{buttonsMessage},{})
                 dha.relayWAMessage(prep)
         }
